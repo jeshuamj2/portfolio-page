@@ -4,23 +4,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="text/javascript" src="http://cdn.aloha-editor.org/latest/lib/require.js"></script>
-    <script type="text/javascript" src="http://cdn.aloha-editor.org/latest/lib/vendor/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="aloha/lib/require.js"></script>
+              <script type="text/javascript" src="aloha/lib/vendor/jquery-1.7.2.js"></script>
  
               <!-- load the Aloha Editor core and some plugins -->
-		<script src="http://cdn.aloha-editor.org/latest/lib/aloha.js"
-							   data-aloha-plugins="common/ui,
-													common/format,
-													common/list,
-													common/link,
-													common/highlighteditables">
-		</script>
+              <script src="aloha/lib/aloha.js"
+                                   data-aloha-plugins="common/ui,
+                                                        common/format,
+                                                        common/list,
+                                                        common/link,
+                                                        common/highlighteditables">
+              </script>
                
-		  <!-- load the Aloha Editor CSS styles -->
-		<link href="http://cdn.aloha-editor.org/latest/css/aloha.css" rel="stylesheet" type="text/css" />
-
-	  <!-- make all elements with class="editable" editable with Aloha Editor -->
-		<script type="text/javascript">
+              <!-- load the Aloha Editor CSS styles -->
+              <link href="aloha/css/aloha.css" rel="stylesheet" type="text/css" />
+ 
+              <!-- make all elements with class="editable" editable with Aloha Editor -->
+              <script type="text/javascript">
+                     Aloha.ready( function() {
+                            var $ = Aloha.jQuery;
+                            $('.editable').aloha();
+                     });
+              </script>
 			 Aloha.ready( function() {
 					var $ = Aloha.jQuery;
 					$('.editable').aloha();
@@ -91,7 +96,7 @@
 			
 			<div class="modal fade" id="Modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!--Change Modal ID-->
 				<div class="modal-dialog">
-					<div class="modal-content editable editable">
+					<div class="modal-content editable">
 						<div class="modal-header">
 							<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 							<h2 class="modal-title" id="myModalLabel">USA Management</h2><!--Popup Header-->
