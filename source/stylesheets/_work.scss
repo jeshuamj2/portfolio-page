@@ -1,0 +1,11 @@
+$img-dim: 250px;
+$spacing: 1em;
+
+img.my-work {
+	max-width: $img-dim;
+	max-height: $img-dim;
+	display: block;
+	margin: auto;
+	margin-bottom: $spacing;
+	text-align: center;
+}

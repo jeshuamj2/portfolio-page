@@ -1,3 +1,4 @@
+require 'middleman-gh-pages'
 ###
 # Page options, layouts, aliases and proxies
 ###

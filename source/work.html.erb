@@ -2,19 +2,41 @@
 title: My Work
 ---
 
-<h1> My Work </h1>
-<h2> Georgia Tech EcoCar 3 (2015 - Present) </h2>
-<%= image_tag 'ecocar.png' %>
-<p>
-	I am a member of the Georgia Tech EcoCar 3 team. Our basic task is to convert a car into a hybrid electric vehicle on a restricted timeline. In my involvment with the EcoCar team, I worked with the Mechanical team. I was trained to use Siemens NX and went on to learn usage of various machines including CNC machines. EcoCar 3 is a Department of Energy competition sponsored by General Motors. You can read more about the EcoCar 3 competition here: http://ecocar3.org
-</p>
-<h2> Digital Scientists (July 2013 - August 2014)</h2>
-<%= image_tag 'ds.png' %>
-<p>
-	During my final year of high school, I did a Georgia Work-Based Learning Internship with Digital Scientists, a local startup web development company in Alpharetta, Georgia. I worked extensively with databases and web development. I interned there full-time over the following summer where I worked with Rately, the company's shopping app. I also tested iBeacons for use for the app to provide location-based notifications. You can read more about Digital Scientists at http://digitalscientists.com
-</p>
-<h2> FIRST Robotics Competition (August 2010 - May 2014)</h2>
-<%= image_tag 'frc.png' %>
-<p>
-	Throughout high school, I participated in a robotics team which competed in the well-known FIRST Robotics Competition (FRC). Constructing robots to compete in the regional competition is where I got my first hands-on taste of engineering and the design process. The challenge provided time and cost constraints which forced us to innovate and optimize our design timeline. It is here I learned the value of testing a product before release, or in this case, the competition. Throughout my time there we began giving more importance to learning advanced machines and started rapid prototyping using Autodesk Inventor to speed up our design and eliminate worse ideas before we construction began. I served as Vice President my final year and I instituted Agile project management principles using Pivotal Tracker to further optimize our build process.
-</p>
+<h1>My Work</h1>
+<div class = "container-fluid">
+	<div class = "row">
+		<div class = "col-md-6 col-xs-12">
+		<div class = "panel panel-default">
+		<div class = "panel-body">
+			<h2> Georgia Tech EcoCar 3 (2015 - Present) </h2>
+			<%= image_tag 'ecocar.png', :class => 'my-work' %>
+			<p>
+				I am a member of the Georgia Tech EcoCar 3 team. Our basic task is to convert a car into a hybrid electric vehicle on a restricted timeline. In my involvment with the EcoCar team, I worked with the Mechanical team. I was trained to use Siemens NX and went on to learn usage of various machines including CNC machines. EcoCar 3 is a Department of Energy competition sponsored by General Motors. You can read more about the EcoCar 3 competition here: <%= link_to "http://ecocar3.org", "http://ecocar3.org" %>
+			</p>
+		</div>
+		</div>
+		</div>
+		<div class = "col-md-6 col-xs-12">
+		<div class = "panel panel-default">
+		<div class = "panel-body">
+			<h2> Digital Scientists (July 2013 - August 2014)</h2>
+			<%= image_tag 'ds.png', :class => 'my-work' %>
+			<p>
+				During my final year of high school, I did a Georgia Work-Based Learning Internship with Digital Scientists, a local startup web development company in Alpharetta, Georgia. I worked extensively with databases and web development. I interned there full-time over the following summer where I worked with Rately, the company's shopping app. I also tested iBeacons for use for the app to provide location-based notifications. You can read more about Digital Scientists at http://digitalscientists.com
+			</p>
+		</div>
+		</div>
+		</div>
+		<div class = "col-md-6 col-xs-12">
+		<div class = "panel panel-default">
+		<div class = "panel-body">
+			<h2> FIRST Robotics Competition (August 2010 - May 2014)</h2>
+			<%= image_tag 'frc.png', :class => 'my-work' %>
+				Throughout high school, I participated in a robotics team which competed in the well-known FIRST Robotics Competition (FRC). Constructing robots to compete in the regional competition is where I got my first hands-on taste of engineering and the design process. The challenge provided time and cost constraints which forced us to innovate and optimize our design timeline. It is here I learned the value of testing a product before release, or in this case, the competition. Throughout my time there we began giving more importance to learning advanced machines and started rapid prototyping using Autodesk Inventor to speed up our design and eliminate worse ideas before we construction began. I served as Vice President my final year and I instituted Agile project management principles using Pivotal Tracker to further optimize our build process.
+			</p>
+			</div>
+		</div>
+		</div>
+		</div>
+	</div>
+</div>
