@@ -1,0 +1,9 @@
+$navbar-spacing: 20px;
+body {
+  padding-top: $navbar-spacing;
+  padding-bottom: $navbar-spacing;
+}
+
+.navbar {
+  margin-bottom: $navbar-spacing;
+}

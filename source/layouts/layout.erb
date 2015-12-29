@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -11,10 +11,17 @@
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag :site %>
+    <%= stylesheet_link_tag :bootstrap %>
     <%= javascript_include_tag :all %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <%= javascript_include_tag :bootstrap %>
   </head>
 
+
   <body class="<%= page_classes %>">
-    <%= yield %>
+    <div class = "container">
+      <%= partial 'navbar' %>
+      <%= yield %>
+    </div>
   </body>
 </html>
